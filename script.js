@@ -9,7 +9,7 @@ const ratioSelect = document.getElementById("ratio-select");
 const gridGallery = document.querySelector(".gallery-grid");
 
 
-const API_VALUE = "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";
+const API_VALUE = "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";
 
 const examplePrompts = [
   "A cozy little cabin surrounded by snow-covered pine trees during twilight with warm lights glowing from the windows",
