@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Image Generator</title>
+    <!-- Linking Fontawsome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body >
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo-wrapper">
+          <div class="logo">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h1>AI Image Generator</h1>
+        </div>
+
+        <button class="theme-toggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </header>
+
+      <div class="main-content">
+        <form action="#" class="prompt-form">
+          <div class="prompt-container">
+            <textarea
+              class="prompt-input"
+              placeholder="Describe your imagination in detail..."
+              required
+              autofocus
+            ></textarea>
+            <button type="button" class="prompt-btn">
+              <i class="fa-solid fa-dice"></i>
+            </button>
+          </div>
+          <!-- Prompt Actions/buttons -->
+          <div class="prompt-actions">
+            <!-- <div class="select-wrapper">
+              <select class="custom-select" id="model-select" required>
+                <option value="" selected disabled>Select Model</option>
+                <option value="black-forest-labs/FLUX.1-dev">FLUX.1-dev</option>
+                <option value="black-forest-labs/FLUX.1-schnell">
+                  FLUX.1-schnell
+                </option>
+                <option value="stabilityai/stable-diffusion-xl-base-1.0">
+                  Stable Diffusion XL
+                </option>
+                <option value="runwayml/stable-diffusion-v1-5">
+                  Stable Diffusion V1.5
+                </option>
+                <option value="promthero/openjourney">Open Journey</option>
+              </select>
+            </div> -->
+            <div class="select-wrapper">
+  <select class="custom-select" id="model-select" required>
+    <option value="" selected disabled>Select Model</option>
+    
+    <!-- FLUX Series -->
+    <option value="black-forest-labs/FLUX.1-dev">FLUX.1-dev</option>
+    <option value="black-forest-labs/FLUX.1-schnell">FLUX.1-schnell</option>
+
+    <!-- Stable Diffusion Series -->
+    <option value="stabilityai/stable-diffusion-3-5">Stable Diffusion 3.5</option>
+    <option value="stabilityai/stable-diffusion-xl-base-1.0">Stable Diffusion XL (base)</option>
+    <!-- <option value="runwayml/stable-diffusion-v1-5">Stable Diffusion V1.5</option> -->
+
+    <!-- Other Open Models -->
+    <!-- <option value="promthero/openjourney">Open Journey</option>
+    <option value="ideogram/ideogram">Ideogram 3.0</option> -->
+  </select>
+</div>
+
+
+            <div class="select-wrapper">
+              <select class="custom-select" id="count-select" required>
+                <option value="" selected disabled>Image Count</option>
+                <option value="1">1 Image</option>
+                <option value="2">2 Image</option>
+                <option value="3">3 Image</option>
+                <option value="4">4 Image</option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <select class="custom-select" id="ratio-select" required>
+                <option value="" selected disabled>Aspect Ratio</option>
+                <option value="1/1">Square (1:1)</option>
+                <option value="16/9">Landscape (16:9)</option>
+                <option value="9/16">Portrait (9:16)</option>
+              </select>
+            </div>
+            <button type="submit" class="generate-btn">
+              <i class="fa-solid fa-wand-sparkles"></i>
+              Generate
+            </button>
+          </div>
+
+          <div class="gallery-grid">
+            <!-- <div class="img-card loading">
+                <div class="status-container">
+                    <div class="spinner"></div>
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <p class="status-text">Generating....</p>
+                </div>
+              <img
+                src="https://betterstudio.com/wp-content/uploads/2019/05/1-1-instagram-1024x1024.jpg"
+                class="result-img"
+              />
+              <div class="img-overlay">
+                <button class="img-download-btn">
+                  <i class="fa-solid fa-download"></i>
+                </button>
+              </div>
+            </div> -->
+
+
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
