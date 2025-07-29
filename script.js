@@ -9,6 +9,8 @@ const ratioSelect = document.getElementById("ratio-select");
 const gridGallery = document.querySelector(".gallery-grid");
 
 
+const API_VALUE = "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";
+
 const examplePrompts = [
   "A cozy little cabin surrounded by snow-covered pine trees during twilight with warm lights glowing from the windows",
   "A futuristic cityscape at night with flying cars, neon lights, and tall glass skyscrapers",
